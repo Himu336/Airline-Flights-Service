@@ -1,0 +1,17 @@
+{
+  "name": "airline-booking-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "author": "Himu336",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "http-status-code": "^2.1.0",
+    "winston": "^3.17.0"
+  }
+}
