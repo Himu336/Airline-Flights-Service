@@ -12,6 +12,9 @@
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "http-status-code": "^2.1.0",
+    "mysql2": "^3.14.1",
+    "sequelize": "^6.37.7",
+    "sequelize-cli": "^6.6.3",
     "winston": "^3.17.0"
   }
 }
