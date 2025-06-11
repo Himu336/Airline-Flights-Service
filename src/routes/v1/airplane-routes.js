@@ -11,9 +11,14 @@ router.post('/',
     AirplaneController.createAirplane
 );
 
-// POST /api/v1/airplanes GET
+// GET /api/v1/airplanes
 router.get('/', 
     AirplaneController.getAirplanes
+);
+
+// GET /api/v1/airplanes/:id
+router.get('/:id', 
+    AirplaneController.getAirplane
 );
 
 
