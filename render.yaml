@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: Airline-Flights-Service
+    env: node
+    plan: free
+    buildCommand: npm ci
+    startCommand: node src/index.js
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: PORT
+        value: 3000
+      - key: FLIGHT_SERVICE
+        value: http://localhost:3001
+      - key: DB_HOST
+        value: yamabiko.proxy.rlwy.net
+      - key: DB_USER
+        value: root
+      - key: DB_PASSWORD
+        value: GobnnHnwpkSgmEHPcVDiQrtgkDifXGzw
+      - key: DB_NAME
+        value: railway
+      - key: DB_PORT
+        value: 59288
+      - key: AMQP_URL
+        value: amqp://localhost
+    postDeploy:
+      - npx sequelize-cli db:migrate --env development --config src/config/config.json --migrations-path src/migrations --models-path src/models
