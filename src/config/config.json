@@ -1,0 +1,25 @@
+{
+  "development": {
+    "username": "root",
+    "password": "GobnnHnwpkSgmEHPcVDiQrtgkDifXGzw",
+    "database": "railway",
+    "host": "yamabiko.proxy.rlwy.net",
+    "port": 59288,
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "GobnnHnwpkSgmEHPcVDiQrtgkDifXGzw",
+    "database": "railway",
+    "host": "yamabiko.proxy.rlwy.net",
+    "port": 59288,
+    "dialect": "mysql"
+  }
+}
